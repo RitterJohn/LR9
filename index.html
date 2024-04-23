@@ -1,0 +1,113 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cool Company</title>
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+</head>
+
+<body>
+<header>
+    <div class="container">
+        <img class="logo animate__animated animate__fadeIn" src="img/logo.png" alt="logo">
+        <div class="wrapper">
+            <div class="offer">
+                <h1 class="title">С помощью нас<br>вы сможете создать то, о чём</h1>
+                    <span class="title_span">желаете!</span>
+                    <p class="offer_text">Наши возможности + опыт позволят Вам достичь огромного успеха. Мы верим в вас! И знаем это на все <span class="prozent">100%</span>. Вас не остановить!</p>
+                    <a class="btn animate__animated animate__pulse" href="#">Узнать больше...</a>
+                </div>
+            <img class="header_img" src="img/header-img.png" alt="picture">
+        </div>
+    </div>
+</header>
+
+<section class="main">
+    <div class="container">
+        <h2 class="main_title">Что Вам необходимо?</h2>
+        <div class="main_block">
+            <div class="blocks">
+                <img class="sm_pic" src="img/f3.png" alt="pic">
+                <h3>Первый блок</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit</p>
+            </div>
+            <div class="blocks">
+                <img class="sm_pic" src="img/f4.png" alt="pic">
+                <h3>Второй блок</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit</p>
+            </div>
+            <div class="blocks">
+                <img class="sm_pic" src="img/f5.png" alt="pic">
+                <h3>Третий блок</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit</p>
+            </div>
+        </div>
+    </div>
+
+</section>
+<hr></hr>
+<section class="first_form_section">
+    <div class="container">
+        <h2 class="main_title">Форма заказа продукта или услуги</h2>
+            <form action="#" class="form_section_blocks">
+                Имя
+                <p>
+                    <input class="forms" type="text" id="name" onblur="checkName();" required>
+                </p>
+                <div class="error_message"><span id="name_check"></span></div>
+                Номер телефона
+                <p>
+                    <input class="forms" type="text" id="tel" placeholder="8-xxx-xxx-xx-xx" onblur="checkTel();" required>
+                </p>
+                <div class="error_message"><span id="tel_check"></span></div>
+                Дата доставки
+                <p>
+                    <input class="forms" type="date" id="date" onblur="outputData()" requireD>
+                </p>
+                Количество
+                <p>
+                    <input class="forms" type="number" id="quantity" onblur="checkQuantity();" required>
+                </p>
+                <div class="error_message"><span id="quantity_check"></span></div>
+                <p>
+                    <button class="send_button_2" onclick="send()" id="sender" disabled="disabled" type="submit">Отправить заявку!</button>
+                </p>
+                <div><span id="send_check"></span></div>
+            </form>
+</div>
+</section>
+<section class="form_section">
+    <div class="container">
+        <h2 class="main_title">Форма заказа обратного звонка</h2>
+            <form action="#" class="form_section_blocks">
+                <p>
+                    <input class="forms" type="text" name="name" placeholder="Имя" required minlength="3" maxlength="15">
+                </p>
+                <p>
+                    <input class="forms" type="email" name="email" placeholder="Введите свой E-mail" required minlength="7">
+                </p>
+                <p>
+                    <input class="forms" type="text" name="tel" placeholder="Телефон: 8(xxx)xxx-xx-xx" required pattern="8\([0-9]{3}\)[0-9]{3}-[0-9]{2}-[0-9]{2}">
+                </p>
+                <p>
+                    <input class="forms" type="text" name="thema" placeholder="Какая тема Вас интересует?" required>
+                </p>
+                <p>
+                    <button class="send_button" type="submit">Отправить вопрос!</button>
+                </p>
+            </form>
+</div>
+</section>
+<section class="bottom_section">
+    <div class="container">
+        <p class="bottom_text">© Всё на этом сайте защищено</p>
+    </div>
+</section>
+<script src="js/main.js"></script>
+</body>
+</html>
